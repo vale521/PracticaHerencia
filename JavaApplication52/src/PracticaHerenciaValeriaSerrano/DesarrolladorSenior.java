@@ -66,7 +66,7 @@ public class DesarrolladorSenior extends Desarrollador{
     }
     
     @Override
-    public void impartirCapacitacion()
+    public void impartirCapacitación()
     {
         System.out.println(nombre+" está impartiendo capacitación.");
     }
