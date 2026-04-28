@@ -69,4 +69,13 @@ public class Empleado extends Persona{
         System.out.println(nombre+" trabaja en TechCorp!!!");
     }
     
+    public void evaluarDesempeño()
+    {
+        System.out.println(nombre+" no tiene evaluación asignada.");
+    }
+    
+    public void impartirCapacitación()
+    {
+        System.out.println(nombre+" no está impartiendo capacitaciones.");
+    }
 }
