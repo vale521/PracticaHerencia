@@ -76,8 +76,12 @@ public class MAIN {
                     int ed = lea.nextInt();
                     System.out.println("Numero Telefono: ");
                     int tel = lea.nextInt();
+                    System.out.println("Numero interno: ");
+                    int num = lea.nextInt();
                     System.out.println("salario: ");
                     double sal = lea.nextDouble();
+                    System.out.println("SEDE: ");
+                    String sede = lea.nextLine();
                     System.out.println("Identificador empleado: ");
                     String identificador = lea.nextLine();
                     System.out.println("Tipo contrato: (parcial/imparcial)");
@@ -85,7 +89,18 @@ public class MAIN {
                     System.out.println("Fecha contratación: ");
                     String fecha = lea.nextLine();
                     
-                    
+                    if (tipo==1)
+                    {
+                        System.out.println("Lenguaje: ");
+                        String lenguaje = lea.nextLine();
+                        System.out.println("Nivel dominio: ");
+                        String nivel = lea.nextLine();
+                        System.out.println("Herramientas: ");
+                        String her = lea.nextLine();
+                        System.out.println("Cant. proyectos: ");
+                        int cant = lea.nextInt();
+                        empleados.add(new Desarrollador(lenguaje, nivel, her, cant, sal, identificador, tipoC, sede, fecha, nombre, id, tel, dir, num));
+                    }
                     
                 case "7":
                     System.out.println("Saliendo...");
